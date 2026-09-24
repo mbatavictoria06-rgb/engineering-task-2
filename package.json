@@ -1,0 +1,32 @@
+{
+  "name": "engineering-task-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:api": "ts-node src/api/server.ts",
+    "dev:worker": "ts-node src/worker/index.ts",
+    "build": "tsc",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/client": "5.21.1",
+    "@types/pdfkit": "^0.17.6",
+    "dotenv": "^18.0.3",
+    "express": "^5.2.1",
+    "pdfkit": "^0.20.2",
+    "pg": "^8.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.2",
+    "prisma": "5.21.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
